@@ -1,0 +1,20 @@
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+<h1> CREAR CATEGORIA</h1>
+
+<div class="container">
+  <form [formGroup]="categoriaForm" (ngSubmit)="agregarCategoria()">
+
+    <div class="mb-3">
+      <label for="nombreCategoria" class="form-label">Nombre de Categoria:</label>
+      <input formControlName="nombre" type="text" class="form-control" id="Nombre" placeholder="Ingrese el Nombre de la Categoria" required>
+    </div>
+
+      <button type="button" class="btn btn-custom" (click)="agregarCategoria()">CREAR</button>
+  </form>
+
+  
+  
+</div>
+

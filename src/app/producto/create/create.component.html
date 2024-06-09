@@ -1,0 +1,59 @@
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+<h1> CREAR PRODUCTO</h1>
+
+<div class="container">
+  <form [formGroup]="productoForm" (ngSubmit)="agregarProducto()">
+
+    <div class="mb-3">
+      <label for="codigo" class="form-label">Codigo de Producto:</label>
+      <input formControlName="codigo" type="number" class="form-control" id="codigo" placeholder="Ingrese el Codigo" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="precio" class="form-label">Precio de Producto:</label>
+      <input formControlName="precio" type="number" class="form-control" id="precio" placeholder="Ingrese el Precio" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="nombreProducto" class="form-label">Nombre de Producto:</label>
+      <input formControlName="nombre_producto" type="text" class="form-control" id="nombreProducto" placeholder="Ingrese el Nombre del Producto" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="Descripcion" class="form-label">Descripcion:</label>
+      <input formControlName="descripcion" type="text" class="form-control" id="Descripcion" placeholder="Ingrese la descripcion" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="cantidadDisponible" class="form-label">Cantidad Disponible:</label>
+      <input formControlName="cantidad_disponible" type="number" class="form-control" id="cantidadDisponible" placeholder="Ingrese la Cantidad Disponible" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="cantidadInventario" class="form-label">Cantidad Inventario:</label>
+      <input formControlName="cantidad_inventario" type="number" class="form-control" id="cantidadInventario" placeholder="Ingrese la Cantidad en Inventario" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="categoriaId" class="form-label">Id Categoria:</label>
+      <input formControlName="categoria_id" type="number" class="form-control" id="categoriaId" placeholder="Ingrese el Id de la Categoria" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="empresaId" class="form-label">Id Empresa:</label>
+      <input formControlName="empresa_id" type="number" class="form-control" id="empresaId" placeholder="Ingrese el Id de la Empresa" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="Foto" class="form-label">Foto:</label>
+      <input formControlName="foto" type="text" class="form-control" id="Foto" placeholder="Sube una imagen" required>
+    </div>
+
+    <button type="button" class="btn btn-custom" (click)="agregarProducto()">CREAR</button>
+  </form>
+
+ 
+</div>
+
